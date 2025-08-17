@@ -1,2 +1,2 @@
 USE alx_book_store;
-INSERT INTO Customers()
+INSERT INTO Customers(cu)
