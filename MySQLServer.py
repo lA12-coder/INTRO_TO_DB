@@ -15,10 +15,6 @@ except mysql.connector.Error as e:
     print(f"Error while connecting to MySQL: {e}")
     
 finally:
-    cursor.execute("SHOW DATABASES")
-    for db in cursor:
-        print(db)
-        
     if 'cursor' in locals():
         cursor.close()
     if 'connection' in locals() and connection.is_connected():
